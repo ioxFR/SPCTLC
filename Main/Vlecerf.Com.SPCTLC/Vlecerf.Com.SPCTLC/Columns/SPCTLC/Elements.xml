@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1f240935-6b3b-48ba-8f65-6318d2575d82}"
+       Name="SPCTLColumn"
+       DisplayName="SPContentTypeLookup Column"
+       Type="SPContentTypeChoiceField"
+       Required="FALSE"
+       Group="[SPCTLC] VLecerf.Com.SPContentTypeLookupColumn">
+  </Field>
+</Elements>

@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="ddd84a36-5e57-4dc3-914b-f58f901b48f6" 
-        solutionId="ddd84a36-5e57-4dc3-914b-f58f901b48f6" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="Vlecerf.Com.SPCTLC"
-        sharePointProductVersion="15.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ddd84a36-5e57-4dc3-914b-f58f901b48f6" solutionId="ddd84a36-5e57-4dc3-914b-f58f901b48f6" resetWebServer="false" sharePointProductVersion="15.0" name="Vlecerf.Com.SPCTLC" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9c0ce23d-ecef-480d-bb54-7e733555cbea" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="85d78ed3-f06a-4791-8332-326ef2dfa74b" />
+    <projectItemReference itemId="f9f5e2df-eb79-474d-bd99-a15f67552dce" />
+    <projectItemReference itemId="06f02cdf-40b0-4925-b20b-e7b4375df361" />
+  </projectItems>
 </package>

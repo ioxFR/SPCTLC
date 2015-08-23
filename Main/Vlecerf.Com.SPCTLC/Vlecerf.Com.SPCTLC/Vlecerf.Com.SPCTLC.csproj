@@ -49,15 +49,30 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fields\SPContentTypeLookupControl.cs" />
+    <Compile Include="Fields\SPContentTypeLookupField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Columns\SPCTLC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c209a644-2c7a-4bf8-b9d5-b92df6441e2f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SPCTLC Feature\SPCTLC Feature.feature">
+      <FeatureId>{9c0ce23d-ecef-480d-bb54-7e733555cbea}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06f02cdf-40b0-4925-b20b-e7b4375df361}</SharePointProjectItemId>
+    </None>
+    <None Include="UserControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f9f5e2df-eb79-474d-bd99-a15f67552dce}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{ddd84a36-5e57-4dc3-914b-f58f901b48f6}</PackageId>
     </None>
@@ -65,9 +80,19 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
     <None Include="vlecerf.com.snk" />
+    <None Include="FieldTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85d78ed3-f06a-4791-8332-326ef2dfa74b}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Content Include="Columns\SPCTLC\Elements.xml" />
+    <Content Include="Features\SPCTLC Feature\SPCTLC Feature.Template.xml">
+      <DependentUpon>SPCTLC Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="FieldTypes\fldtypes_SPContentTypeLookupField.xml" />
+    <Content Include="Images\Vlecerf.Com.SPCTLC\spctlcLogoFeature.png" />
+    <Content Include="UserControls\SPContentTypeLookupControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

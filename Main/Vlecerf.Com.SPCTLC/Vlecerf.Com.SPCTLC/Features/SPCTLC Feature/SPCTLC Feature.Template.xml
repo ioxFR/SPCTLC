@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" 
+         Creator="Valentin LECERF" 
+         Title="SPCTLC  - SP Content Type Lookup Column" 
+         Description="Add choice column to your list to select content type based on list of content types available on your site collection. http://vlecerf.com" 
+         Scope="Web"
+         ImageUrl="Vlecerf.Com.SPCTLC/spctlcLogoFeature.png"
+         ImageUrlAltText="SPCTLC Feature"
+         Id="f501945d-c519-4fd1-9ca6-4fd44093761f"
+         Version="0.1.0.0">
+</Feature>
