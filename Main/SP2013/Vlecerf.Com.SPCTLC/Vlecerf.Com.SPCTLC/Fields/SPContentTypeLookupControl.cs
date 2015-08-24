@@ -4,14 +4,9 @@
 // summary:	Implements the sp content type lookup control class
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+using System.Web.UI.WebControls;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 
 namespace Vlecerf.Com.SPCTLC.Fields
 {
@@ -24,7 +19,7 @@ namespace Vlecerf.Com.SPCTLC.Fields
     class SPContentTypeLookupControl : BaseFieldControl
     {
         /// <summary>   Type of the ddl content. </summary>
-        DropDownList ddlContentType;
+        DropDownList _ddlContentType;
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         /// <summary>   Gets the name of the default rendering template. </summary>
@@ -52,15 +47,13 @@ namespace Vlecerf.Com.SPCTLC.Fields
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            ddlContentType = (DropDownList)TemplateContainer.FindControl("ddlContentType");
-            if (ControlMode == SPControlMode.New || ControlMode == SPControlMode.Edit)
+            _ddlContentType = (DropDownList)TemplateContainer.FindControl("ddlContentType");
+            if (ControlMode != SPControlMode.New && ControlMode != SPControlMode.Edit) return;
+            var currentWeb = SPContext.Current.Web;
+            var contentTypesList = currentWeb.ContentTypes;
+            foreach (SPContentType contentType in contentTypesList)
             {
-                SPWeb currentWeb = SPContext.Current.Web;
-                var contentTypesList = currentWeb.ContentTypes;
-                foreach (SPContentType contentType in contentTypesList)
-                {
-                    ddlContentType.Items.Add(contentType.Name);
-                }
+                _ddlContentType.Items.Add(contentType.Name);
             }
         }
 
@@ -81,12 +74,12 @@ namespace Vlecerf.Com.SPCTLC.Fields
             get
             {
                 EnsureChildControls();
-                return ddlContentType.SelectedValue;
+                return _ddlContentType.SelectedValue;
             }
             set
             {
-                this.EnsureChildControls();
-                ddlContentType.SelectedValue = (string)ItemFieldValue;
+                EnsureChildControls();
+                _ddlContentType.SelectedValue = (string)ItemFieldValue;
             }
         }
     }

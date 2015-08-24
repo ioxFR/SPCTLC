@@ -6,11 +6,6 @@
 
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Vlecerf.Com.SPCTLC.Fields
 {
