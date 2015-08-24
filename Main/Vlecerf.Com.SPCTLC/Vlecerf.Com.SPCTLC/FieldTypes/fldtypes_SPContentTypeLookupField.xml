@@ -3,7 +3,7 @@
     <Field Name="TypeName">SPContentTypeLookupField</Field>
     <Field Name="ParentType">Choice</Field>
     <Field Name="TypeDisplayName">Content Type Name</Field>
-    <Field Name="TypeShortDescription">Field to select content type</Field>
+    <Field Name="TypeShortDescription">SharePoint Content Type Lookup Column</Field>
     <Field Name="UserCreatable">TRUE</Field>
     <Field Name="FieldTypeClass">
       Vlecerf.Com.SPCTLC.Fields.SPContentTypeLookupField,
