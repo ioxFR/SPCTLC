@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vlecerf.Com.SPCTLC", "Vlecerf.Com.SPCTLC\Vlecerf.Com.SPCTLC.csproj", "{45520B54-730D-4C72-BACF-2D372AEB313B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vlecerf.Com.SPCTLC.SP2013", "Vlecerf.Com.SPCTLC\Vlecerf.Com.SPCTLC.SP2013.csproj", "{45520B54-730D-4C72-BACF-2D372AEB313B}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
@@ -11,7 +11,7 @@ Global
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Vlecerf.Com.SPCTLC\\Vlecerf.Com.SPCTLC.csproj
+		SccProjectUniqueName1 = Vlecerf.Com.SPCTLC\\Vlecerf.Com.SPCTLC.SP2013.csproj
 		SccProjectName1 = Vlecerf.Com.SPCTLC
 		SccLocalPath1 = Vlecerf.Com.SPCTLC
 	EndGlobalSection
