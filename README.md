@@ -1,6 +1,3 @@
-# SPCTLC
-SP Content Type Lookup Column (SPCTLC) for SharePoint
-
 # Project Description
 SharePoint 2010/2013 Project that allow you to create column to select content type available in site collection.
 
