@@ -11,9 +11,9 @@ Package provide these stuff:
 * Column lookup site collection content types
 
 # Screenshots
-[image:SPCTLC1.png]
-[image:SPCTLC2.png]
-[image:SPCTLC3.png]
+![](http://vlecerf.com/wp-content/uploads/2017/05/SPCTLC1.png)
+![](http://vlecerf.com/wp-content/uploads/2017/05/SPCTLC2.png)
+![](http://vlecerf.com/wp-content/uploads/2017/05/SPCTLC3.png)
 
 # Compatibility
 * SharePoint 2013
