@@ -1,4 +1,7 @@
 ![](https://i1.wp.com/vlecerf.com/wp-content/uploads/2012/10/spctlcLogo.png?resize=300%2C129)
+
+# Important Note: Project End Of Life, please keep in my this project will not be updated anymore and be archived soon. Thanks
+
 # Project Description
 SharePoint 2010/2013 Project that allow you to create column to select content type available in site collection.
 
